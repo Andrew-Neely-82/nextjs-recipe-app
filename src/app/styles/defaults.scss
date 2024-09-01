@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scroll-padding: 3rem;
+}
+
+* {
+  box-sizing: border-box;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+ol {
+  list-style: none;
+}
+
+input[type="text"] {
+  padding: 0.25rem;
+}
+
+p {
+  max-width: 75ch;
+  text-wrap: pretty;
+}
+
+img {
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  shape-margin: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding);
+  }
+}

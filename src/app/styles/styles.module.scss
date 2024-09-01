@@ -1,0 +1,38 @@
+.createRecipeCard {
+  $bg-shadow: 0 0 1rem #ffffff50;
+
+  width: fit-content;
+  border: 1px solid white;
+  border-radius: 1rem;
+  box-shadow: $bg-shadow;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.createRecipe {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    textarea {
+      // overflow-y: scroll;
+      padding: 0.25rem;
+    }
+  }
+}
+
+.ingredientContainer {
+  .ingredient {
+    
+  }
+}
+
+.submitRecipe {
+  width: fit-content;
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  margin: auto;
+}
